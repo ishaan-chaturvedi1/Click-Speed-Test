@@ -16,7 +16,7 @@ Clicker.addEventListener("click", ()=> {
         if (e.key == "d"){
             console.log(e)
             clearInterval(maininterval)
-            document.querySelector("h2").innerHTML = `Your click speed is ${clicked/i}`
+            document.querySelector("h2").innerHTML = `Your click speed is ${clicked/i.toFixed(3)}`
             document.querySelector(".container").style.display = "none";
         }
     })
