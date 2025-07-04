@@ -8,9 +8,9 @@ Clicker.addEventListener("click", ()=> {
     if (clicked == 1){
         document.querySelector("h3").innerHTML =  0
         var maininterval = setInterval(() => {
-            document.querySelector("h3").innerHTML =  i + 1
-            i++
-        }, 1000);
+            document.querySelector("h3").innerHTML =  i + 0.2
+            i = i+0.2
+        }, 0200);
     }
     document.addEventListener("keydown", (e)=> {
         if (e.key == "d"){
